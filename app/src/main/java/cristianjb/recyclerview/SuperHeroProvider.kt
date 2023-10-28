@@ -4,51 +4,51 @@ class SuperHeroProvider {
     companion object{
         val superheroList = listOf<SuperHero>(
             SuperHero(
-                "spiderman",
-                "Jetbrains",
-                "AristiDevs",
+                "Spiderman",
+                "Marvel",
+                "Peter",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/spiderman.jpg"
             ),
             SuperHero(
-                "daredevil",
-                "Jetbraidns",
-                "ArisdatiDevs",
+                "Daredevil",
+                "Marvel",
+                "Matthew Michael",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/daredevil.jpg"
             ),
             SuperHero(
-                "logan",
-                "Jetbradwains",
-                "AristgiDevs",
+                "Logan",
+                "Marvel",
+                "James Howlett",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/logan.jpeg"
             ),
             SuperHero(
-                "batman",
-                "Jetbrafqins",
-                "asristiDfevs",
+                "Batman",
+                "DC",
+                "Bruce Wayne",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/batman.jpg"
             ),
             SuperHero(
-                "thor",
-                "Jetzbrasins",
-                "ArzistizDevs",
+                "Thor",
+                "Marvel",
+                "Thor Odinson",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/thor.jpg"
             ),
             SuperHero(
-                "flash",
-                "Jetbrqhains",
-                "AristzimDevs",
+                "Flash",
+                "DC",
+                "Jay Garrick",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/flash.png"
             ),
             SuperHero(
-                "lantern verde",
-                "Jetbrautins",
-                "AristitnDevs",
+                "Linterna verde",
+                "DC",
+                "Alan Scott",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/green-lantern.jpg"
             ),
             SuperHero(
                 "Woman",
-                "Jetbrains",
-                "AristiDevs",
+                "Marvel",
+                "Mami",
                 "https://cursokotlin.com/wp-content/uploads/2017/07/wonder_woman.jpg"
             )
         )

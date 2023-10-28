@@ -2,6 +2,9 @@ package cristianjb.recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cristianjb.recyclerview.adapter.SuperHeroAdapter
@@ -18,9 +21,21 @@ class MainActivity : AppCompatActivity() {
         initRecyclerView()
     }
 
-    private fun initRecyclerView(){
-        binding.recyclerSuperHero.layoutManager = LinearLayoutManager(this)
-        binding.recyclerSuperHero.adapter = SuperHeroAdapter(SuperHeroProvider.superheroList)
+    private fun initRecyclerView() {
+//        para hacer dos columnas
+//        val manager = GridLayoutManager(this, 2)
+        val manager = LinearLayoutManager(this)
+        val decoration = DividerItemDecoration(this, manager.orientation)
+        binding.recyclerSuperHero.layoutManager = manager
+        //  binding.recyclerSuperHero.adapter = SuperHeroAdapter(SuperHeroProvider.superheroList, {onItemSelected(it)})
+        binding.recyclerSuperHero.adapter =
+            SuperHeroAdapter(SuperHeroProvider.superheroList) { superHero ->
+                onItemSelected(superHero)
+            }
+       // binding.recyclerSuperHero.addItemDecoration(decoration)
+    }
 
+    fun onItemSelected(superHero: SuperHero) {
+        Toast.makeText(this, superHero.superhero, Toast.LENGTH_SHORT).show()
     }
 }
